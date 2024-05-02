@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>e-jobs - Sua plataforma de emprego!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" href="{% static '/images/pandape_logo-removebg-preview.png' %}" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static '/images/pandape_logo-removebg-preview.png' %}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{% static '/style/style.css' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.x/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-body-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">
+                <img alt='logo' src="{% static "/images/pandape_logo-removebg-preview.png" %}" height='58px'>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-black" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                            Sou Empresa
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Central de candidatos</a></li>
+                            <li><a class="dropdown-item" href="#">Pagamentos</a></li>
+                            <li><a class="dropdown-item" href="#">Vagas Cadastradas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sou Trabalhador
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Vagas CLT</a></li>
+                            <li><a class="dropdown-item" href="#">Vagas autônomo</a></li>
+                            <li><a class="dropdown-item" href="#">Minhas candidaturas</a></li>
+                        </ul>
+                    </li>            
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">Login</a>
+                    </li> 
+                </ul>                   
+            </div>
+        </div>
+    </nav>   
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static '/images/workers.jpg' %}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-flex text-light flex-column align-items-center justify-content-center">
+                    <h5>Bem-vindo ao e-jobs!</h5>
+                    <p>Participe da nossa comunidade agora mesmo.</p>
+                    <div>
+                        <a href="#" class="btn btn-primary">Cadastre-se</a>
+                        <a href="#" class="btn btn-secondary">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section2">
+        <div class="container">
+            <div class="row text-center py-3">
+                <div class="col-lg-6 m-auto">
+                    <h1 class="h1">Apoio para o RH</h1>
+                    <p>
+                        A e-jobs facilita na mediação de contratação e pagamento de serviços, promovendo um gerenciamento ágil de candidaturas.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="##">
+                            <img src="{% static '/images/user-doctor-solid.svg'%}" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <a href="#" class="h2 text-decoration-none text-dark">Diversas formas de contratação</a>
+                            <p class="card-text small-text">
+                                Oferecemos a opção de cadastro para vagas CLT e contratação autônomo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="#">
+                            <img src="{% static '/images/credit-card-regular.svg'%}" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Facilidade no pagamento</a>
+                            <p class="card-text small-text">
+                                A e-jobs trabalha com a mais diversa gama de métodos de pagamento, incluindo pix.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="##">
+                            <img src="{% static '/images/check-solid.svg'%}" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <a href="#" class="h2 text-decoration-none text-dark">Acesso gratuito</a>
+                            <p class="card-text small-text">
+                                A plataforma é completamente gratuita, não sendo necessário nenhum pagamento para se cadastrar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      <footer class="bg-body-dark text-light pt-2 pb-1">
+        <div class="footer-container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h6>Sobre Nós</h6>
+                        <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Equipe</a></li>
+                        <li><a class="text-muted" href="#">Localizações</a></li>
+                        <li><a class="text-muted" href="#">Privacidade</a></li>
+                        <li><a class="text-muted" href="#">Termos</a></li>
+                        </ul>
+                    </div>
+                <div class="col-md-3">
+                    <h6>Recursos</h6>
+                        <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Blog</a></li>
+                        <li><a class="text-muted" href="#">Recursos Humanos</a></li>
+                        <li><a class="text-muted" href="#">Apoio ao Cliente</a></li>
+                        <li><a class="text-muted" href="#">Mapa do Site</a></li>
+                        </ul>
+                </div>
+                    <div class="col-md-3">
+                        <h6>Suporte</h6>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="text-muted" href="#">FAQ</a></li>
+                            <li><a class="text-muted" href="#">Central de Ajuda</a></li>
+                            <li><a class="text-muted" href="#">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h6>Redes Sociais</h6>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="text-muted" href="#">Facebook</a></li>
+                            <li><a class="text-muted" href="#">Instagram</a></li>
+                            <li><a class="text-muted" href="#">Twitter</a></li>
+                            <li><a class="text-muted" href="#">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column align-items-center justify-content-evelyn pt-3 mt-3 border-top">
+                <p>© 2024 e-jobs - Todos os direitos reservados.</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a class="text-muted" href="#">Privacidade</a></li>
+                    <li class="list-inline-item"><a class="text-muted" href="#">Termos</a></li>
+                    <li class="list-inline-item"><a class="text-muted" href="#">Suporte</a></li>
+                </ul>
+            </div>
+        </footer>                      
+</body>
+</html>
+
