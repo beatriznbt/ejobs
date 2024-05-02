@@ -78,11 +78,7 @@ WSGI_APPLICATION = 'ejobs.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ejobsdb',
-        'USER': 'admin',
-        'PASSWORD': 'B0PgoVrjC2nSTHqT5KoDCaXvv2ez4JXN',
-        'HOST': 'postgres://admin:B0PgoVrjC2nSTHqT5KoDCaXvv2ez4JXN@dpg-copvq2i1hbls73dn7org-a.oregon-postgres.render.com/ejobsdb',
-        'PORT': '5432'
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
