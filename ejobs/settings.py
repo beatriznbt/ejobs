@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-tu!x7n+q&^v*q-ybty$r3-aczf0bpg44tcm7-b0i59kqt!5ovf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ejobs.render.com']
+ALLOWED_HOSTS = ['ejobs-7.onrender.com']
 
 
 # Application definition
